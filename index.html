@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Burger Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo">
+
+            
+          </div>
+          <div class="menu">
+          <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <ul >
+            
+            <li><a href="#home">🏘 Home</a></li>
+            <li><a href="#menu">≣ Menu</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact us.html">✆ Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Signup</a></li>
+            <li>
+              
+              <a href="cart.html">🛒</a>
+            </li>
+            <li>
+              <div  class="search-form">
+                <input  type="search" id="search-box" placeholder=" 🔍search" >
+               <label class="fa fa-search" for="search-box"></label>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        </nav>
+        
+        
+        
+        
+    </header>
+    
+    <main>
+      <section class="featured-section">
+        <div class="container">
+          <div class="featured-text">
+            <h2>Featured Burgers</h2>
+            <p>Check out our most popular burgers:</p>
+          </div>
+          <div class="featured-items">
+            <div class="featured-item">
+              <img src="images/blog-1.jpg" alt="burger 1">
+              <h3>Classic Burger</h3>
+              <p>A juicy patty topped with lettuce, tomato, onion, and pickles.</p>
+              <div class="btn">
+                <button id="minus-btn" class="minusBtn">-</button>
+                <button id="main-btn"class="mainBtn" >Add to Cart</button>
+                <button id="plus-btn" class="plusBtn">+</button>
+              </div> 
+            </div>
+            <div class="featured-item">
+              <img src="images/blog-2.jpg" alt="burger 2">
+              <h3>Bacon Cheeseburger</h3>
+              <p>A classic burger with crispy bacon and melted cheese.</p>
+              <div class="btn">
+                <button id="minus-btn" class="minusBtn">-</button>
+                <button id="main-btn"class="mainBtn" >Add to Cart</button>
+                <button id="plus-btn" class="plusBtn">+</button>
+              </div>            
+             </div>
+            <div class="featured-item">
+              <img src="images/blog-3.jpg" alt="burger 3">
+              <h3>Mushroom Swiss Burger</h3>
+              <p>A delicious burger topped with sautéed mushrooms and melted Swiss cheese.</p>
+              <div class="btn">
+                <button id="minus-btn" class="minusBtn">-</button>
+                <button id="main-btn"class="mainBtn" >Add to Cart</button>
+                <button id="plus-btn" class="plusBtn">+</button>
+              </div>           
+            </div>
+          </div>
+          <div id="toast-message" style="display: none;">Item added to cart!</div>
+
+        </div>
+        <section class="menu-section" id="menu">
+          <div class="container">
+            <div class="menu-text">
+              <h2>Our Menu</h2>
+              <p>Check out our delicious burger menu:</p>
+            </div>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img src="images/product-1.jpg" alt="product-1">
+                <h3>Classic Burger</h3>
+                <p>A juicy patty topped with lettuce, tomato, onion, and pickles.</p>
+                <span>$5.99</span>
+                <div class="btn">
+                  <button id="add-to-cart-btn" class="minusBtn">-</button>
+                  <button id="add-to-cart-btn"class="mainBtn" >Add to Cart</button>
+                  <button id="add-to-cart-btn" class="plusBtn">+</button>
+                </div>              </div>
+              <div class="menu-item">
+                <img src="images/product-2.jpg" alt="product-2">
+                <h3>Cheeseburger</h3>
+                <p>A classic burger with melted American cheese.</p>
+                <span>$6.99</span>
+                <div class="btn">
+                  <button id="add-to-cart-btn" class="minusBtn">-</button>
+                  <button id="add-to-cart-btn"class="mainBtn" >Add to Cart</button>
+                  <button id="add-to-cart-btn" class="plusBtn">+</button>
+                </div>              </div>
+              <div class="menu-item">
+                <img src="images/product-3.jpg" alt="product-3">
+                <h3>Bacon Cheeseburger</h3>
+                <p>A classic burger with crispy bacon and melted cheese.</p>
+                <span>$7.99</span>
+                <div class="btn">
+                  <button id="add-to-cart-btn" class="minusBtn">-</button>
+                  <button id="add-to-cart-btn"class="mainBtn" >Add to Cart</button>
+                  <button id="add-to-cart-btn" class="plusBtn">+</button>
+                </div>              </div>
+              <div class="menu-item">
+                <img src="images/product-4.jpg" alt="product-4">
+                <h3>Double Cheeseburger</h3>
+                <p>Two juicy patties topped with melted American cheese.</p>
+                <span>$8.99</span>
+                <div class="btn">
+                  <button id="add-to-cart-btn" class="minusBtn">-</button>
+                  <button id="add-to-cart-btn"class="mainBtn" >Add to Cart</button>
+                  <button id="add-to-cart-btn" class="plusBtn">+</button>
+                </div>              </div>
+              <div class="menu-item">
+                <img src="images/product-5.jpg" alt="product-5">
+                <h3>Mushroom Swiss Burger</h3>
+                <p>A juicy patty topped with sautéed mushrooms and Swiss cheese.</p>
+                <span>$9.99</span>
+                <div class="btn">
+                  <button id="add-to-cart-btn" class="minusBtn">-</button>
+                  <button id="add-to-cart-btn"class="mainBtn" >Add to Cart</button>
+                  <button id="add-to-cart-btn" class="plusBtn">+</button>
+                </div>              </div>
+              <div class="menu-item">
+                <img src="images/product-6.jpg" alt="product-6">
+                <h3>BBQ Burger</h3>
+                <p>A juicy patty topped with crispy onion rings and tangy BBQ sauce.</p>
+                <span>$10.99</span>
+                <div class="btn">
+                  <button id="add-to-cart-btn" class="minusBtn">-</button>
+                  <button id="add-to-cart-btn"class="mainBtn" >Add to Cart</button>
+                  <button id="add-to-cart-btn" class="plusBtn">+</button>
+                </div>
+              </div>
+            </div>
+          <div id="toast-message" style="display: none;">Item added to cart!</div>
+            
+        
+          </div>
+        </section>
+        <section class="create-section">
+          <div class="container">
+            <div class="create-text">
+              <h2>Create Your Own Burger</h2>
+              <p>Build a burger from scratch:</p>
+            </div>
+            <div class="create-items">
+              <div class="create-item">
+                <h3>Choose Your Bun:</h3>
+                <ul>
+                  <li>
+                    <input type="radio" name="bun" value="sesame" id="sesame">
+                    <label for="sesame">Sesame</label>
+                    <div class="ingredient-image">
+                        <img src="images/Sesame seed bun.jpg " alt="Sesame Seed Bun">
+                    </div>
+                </li>
+                
+                <li>
+                  <input type="radio" name="bun" value="potato" id="potato">
+                  <label for="potato">Potato</label>
+                  <div class="ingredient-image">
+                      <img src="images/Potato Bun.jpg " alt="Potato Bun">
+                  </div>
+              </li>
+                  <li>
+                    <input type="radio" name="bun" value="wheat" id="wheat">
+                    <label for="wheat">Wheat</label>
+                    <div class="ingredient-image">
+                      <img src="images/Wheat bun.jpg" alt="Wheat Bun">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="create-item">
+                <h3>Choose Your Protein:</h3>
+                <ul>
+                  <li>
+                    <input type="radio" name="protein" value="beef" id="beef">
+                    <label for="beef">Beef</label>
+                    <div class="ingredient-image">
+                      <img src="images/beef.jpg" alt="Beef">
+                    </div>
+                  </li>
+                  <li>
+                    <input type="radio" name="protein" value="chicken" id="chicken">
+                    <label for="chicken">Chicken</label>
+                    <div class="ingredient-image">
+                      <img src="images/Chicken.jpg" alt="Chicken">
+                    </div>
+                  </li>
+                  <li>
+                    <input type="radio" name="protein" value="vegetarian" id="vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                    <div class="ingredient-image">
+                    <img src="images/Vegeterian.jpg" alt="Chicken">
+
+                      
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="create-item">
+                <h3>Choose Your Toppings:</h3>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="toppings" value="lettuce" id="lettuce">
+                    <label for="lettuce">Lettuce</label>
+                    <div class="ingredient-image">
+                      <img src="images/Lettuce.jpg" alt="Lettuce">
+                    </div>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="tomato" id="tomato">
+                    <label for="tomato">Tomato</label>
+                    <div class="ingredient-image">
+                      <img src="images/Tomato.jpg" alt="Tomato">
+                    </div>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="onion" id="onion">
+                    <label for="onion">Onion</label>
+                    <div class="ingredient-image">
+                    <img src="images/onion.jpg" alt="Onion">
+                 </div>
+                </li>
+       
+        </ul>
+        </div>
+        <div class="create-item">
+        <h3>Choose Your Sauce:</h3>
+        <ul>
+        <li>
+        <input type="checkbox" name="sauce" value="ketchup" id="ketchup">
+        <label for="ketchup">Ketchup</label>
+        <div class="ingredient-image">
+          <img src="images/ketchup.jpg" alt="Ketchup">
+
+        
+        </div>
+        </li>
+        <li>
+        <input type="checkbox" name="sauce" value="mustard" id="mustard">
+        <label for="mustard">Mustard</label>
+        <div class="ingredient-image">
+          <img src="images/mustard.jpg" alt="Mustard">
+
+        
+        </div>
+        </li>
+        <li>
+        <input type="checkbox" name="sauce" value="mayonnaise" id="mayonnaise">
+        <label for="mayonnaise">Mayonnaise</label>
+        <div class="ingredient-image">
+          <img src="images/mayonnaise.jpg" alt="mayonnaise">
+
+        
+        </div>
+        </li>
+        </ul>
+        </div>
+        <div class="create-button">
+          <button id="burger-button" type="submit">Build Your Burger</button>
+        </div>
+        
+        <div id="burger-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/product-5.jpg" alt="Burger Image">
+            <p>Your burger is ready!</p>
+          </div>
+        </div>
+        
+        <p class="output"></p>
+
+          </div>
+        </section>
+      
+                  <section class="customize-section">
+                    <div class="container">
+                      <div class="customize-text">
+                        <h2>Customize Your Burger</h2>
+                        <p>Make changes to one of our classic burgers:</p>
+                      </div>
+                      <div class="customize-items">
+                        <div class="customize-item">
+                          <div class="image-container">
+                          <img src="images/blog-1.jpg" alt="classic burger">
+                          
+                          </div>
+                          <h3>Classic Burger</h3>
+                          <p>A juicy patty topped with lettuce, tomato, onion, and pickles.</p>
+                          <button id="customize-button">Customize</button>                       
+                         </div>
+                        <div class="customize-item">
+                          <div class="image-container">
+                          <img src="images/blog-2.jpg" alt="bacon cheeseburger">
+                        </div>
+                          <h3>Bacon Cheeseburger</h3>
+                          <p>A classic burger with crispy bacon and melted cheese.</p>
+                          <button id="customize-button">Customize</button>                        </div>
+                        <div class="customize-item">
+                          <div class="image-container">
+                          <img src="images/blog-3.jpg" alt="mushroom swiss burger">
+                          </div>
+                          <h3>Mushroom Swiss Burger</h3>
+                          <p>A delicious burger topped with sautéed mushrooms and melted Swiss cheese.</p>
+                          <button id="customize-button">Customize</button>                        </div>
+                        <div class="customize-item">
+                          <div class="image-container">
+                        <img src="images/blog-1.jpg" alt="spicy burger">
+                        </div>
+                        <h3>Spicy Burger</h3>
+                        <p>A burger with a kick, topped with jalapenos and spicy sauce.</p>
+                        <button id="customize-button">Customize</button>                        </div>
+                        </div>
+                        </div>
+                        </section>
+                        </main>
+                        <footer>
+                        <div class="container">
+                        <p>© 2023 Burger Joint</p>
+                        </div>
+                        </footer>
+                        <script src="script.js"></script>
+                        </body>
+                        </html>
+                        
+                        
+                        
+                        
+                        

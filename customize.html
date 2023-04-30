@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customize Your Burger</title>
+  <style>
+ 
+  #burger {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #1f1f1f;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+    transform: rotateX(20deg) scale(1.2);
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+  }
+
+  input[type="radio"]:hover,
+  input[type="checkbox"]:hover {
+    transform: rotateX(0deg) scale(1.5);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+  }
+
+  input[type="radio"]:hover + label,
+  input[type="checkbox"]:hover + label {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  label {
+    transition: all 0.3s ease-in-out;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
+    color: #1f1f1f;
+  }
+
+  h1:hover {
+    transform: scale(1.1);
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4d4d4d;
+  }
+
+  button {
+    background-color: #214c31;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #1f1f1f;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .ingredients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .ingredient {
+    margin: 0 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  .ingredient:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ingredient img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.ingredient h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+
+.ingredient p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #4d4d4d;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.ingredient button {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ingredient button:hover {
+  background-color: #100a0a;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+ 
+
+  </style>
+</head>
+<body>
+  <div id="burger">
+    <h2>Customize Your Burger</h2>
+    <p>Select your toppings:</p>
+    <div class="ingredients">
+      <div class="ingredient">
+        <input type="checkbox" name="topping" value="lettuce">
+        <img src="images/Lettuce.jpg">
+        <label>Lettuce</label>
+      </div>
+      <div class="ingredient">
+        <input type="checkbox" name="topping" value="tomato">
+        <img src="images/Tomato.jpg">
+        <label>Tomato</label>
+      </div>
+      <div class="ingredient">
+        <input type="checkbox" name="topping" value="cheese">
+        <img src="images/cheese.jpg">
+        <label>Cheese</label>
+      </div>
+      <div class="ingredient">
+        <input type="checkbox" name="topping" value="onion">
+        <img src="images/onion.jpg">
+        <label>Onion</label>
+      </div>
+      <div class="ingredient">
+        <input type="checkbox" name="topping" value="pickle">
+        <img src="images/pickle.jpg">
+        <label>Pickle</label>
+      </div>
+    </div>
+    <p>Select your condiments:</p>
+    <div class="ingredients">
+      <div class="ingredient">
+        <input type="checkbox" name="condiment" value="ketchup">
+        <img src="images/ketchup.jpg">
+        <label>Ketchup</label>
+      </div>
+      <div class="ingredient">
+        <input type="checkbox" name="condiment" value="mustard">
+        <img src="images/mustard.jpg">
+        <label>Mustard</label>
+      </div>
+      <div class="ingredient">
+        <input type="checkbox" name="condiment" value="mayo">
+        <img src="images/mayonnaise.jpg">
+        <label>Mayonnaise</label>
+      </div>
+    </div>
+    <button onclick="order()">Place Order</button>
+  </div>
+  <script src="customize.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.about-section {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  .about-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-items {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .about-item {
+    text-align: center;
+  }
+  
+  .about-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .about-item p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .image-container {
+    position: relative;
+    width: 300px; /* set the width and height to match your image size */
+    height: 200px;
+  }
+  .about-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-item img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .about-item img:active {
+    transform: scale(0.8);
+  }
+  .about-item:hover {
+    background-color: #e1e1e1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .about-item h3:hover {
+    color: #5571ef;
+    cursor: pointer;
+  }
+  .about-item p:hover {
+    color: #5571ef;
+    cursor: pointer;
+  }
+  .about-item img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .about-item {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-item:hover {
+    background-color: #e1e1e1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .about-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-item img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .about-item img:active {
+    transform: scale(0.8);
+  }
+  
+  .about-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-item h3:hover {
+    color: #5571ef;
+    cursor: pointer;
+  }
+  
+  .about-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-item p:hover {
+    color: #5571ef;
+    cursor: pointer;
+  }
+          
+  
+  
+  
